@@ -1,6 +1,6 @@
-# Morphic
+# DLM GPT
 
-An AI-powered search engine with a generative UI.
+An AI-powered search and research assistant with a generative UI, purpose-built for the DLM ecosystem.
 
 ![capture](/public/screenshot-2025-05-04.png)
 
@@ -15,15 +15,9 @@ An AI-powered search engine with a generative UI.
 - 👥 [Contributing](#-contributing)
 - 📄 [License](#-license)
 
-📝 Explore AI-generated documentation on [DeepWiki](https://deepwiki.com/miurla/morphic)
+## 🧪 Try DLM GPT
 
-## 🧪 Try v1.0.0 Beta
-
-Want to experience the next generation of Morphic? The v1.0.0 beta is now available at [beta.morphic.sh](https://beta.morphic.sh)!
-
-This major update includes exciting new features like advanced search modes, PostgreSQL database, enhanced UI, and much more. Learn more about what's new in [Issue #680](https://github.com/miurla/morphic/issues/680).
-
-Your feedback helps shape the future of Morphic!
+Deploy the latest build locally or to your preferred hosting platform to experience DLM GPT with the full feature set enabled.
 
 ## 🛠 Features
 
@@ -120,13 +114,13 @@ Models are configured in `public/config/models.json`. Each model requires its co
 Fork the repo to your Github account, then run the following command to clone the repo:
 
 ```bash
-git clone git@github.com:[YOUR_GITHUB_ACCOUNT]/morphic.git
+git clone git@github.com:[YOUR_GITHUB_ACCOUNT]/dlm-gpt.git
 ```
 
 ### 2. Install dependencies
 
 ```bash
-cd morphic
+cd dlm-gpt
 bun install
 ```
 
@@ -164,26 +158,26 @@ Visit http://localhost:3000 in your browser.
 
 ## 🌐 Deploy
 
-Host your own live version of Morphic with Vercel, Cloudflare Pages, or Docker.
+Host your own live version of DLM GPT with Vercel, Cloudflare Pages, or Docker.
 
 ### Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmiurla%2Fmorphic&env=OPENAI_API_KEY,TAVILY_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdlmworld%2Fdlm-gpt&env=OPENAI_API_KEY,TAVILY_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN)
 
 ### Docker Prebuilt Image
 
 Prebuilt Docker images are available on GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/miurla/morphic:latest
+docker pull ghcr.io/YOUR_ORG/dlm-gpt:latest
 ```
 
 You can use it with docker-compose:
 
 ```yaml
 services:
-  morphic:
-    image: ghcr.io/miurla/morphic:latest
+  dlm-gpt:
+    image: ghcr.io/YOUR_ORG/dlm-gpt:latest
     env_file: .env.local
     ports:
       - '3000:3000'
@@ -197,20 +191,20 @@ The default model configuration is located at `public/config/models.json`. For D
 
 ### Setting up the Search Engine in Your Browser
 
-If you want to use Morphic as a search engine in your browser, follow these steps:
+If you want to use DLM GPT as a search engine in your browser, follow these steps:
 
 1. Open your browser settings.
 2. Navigate to the search engine settings section.
 3. Select "Manage search engines and site search".
 4. Under "Site search", click on "Add".
 5. Fill in the fields as follows:
-   - **Search engine**: Morphic
-   - **Shortcut**: morphic
-   - **URL with %s in place of query**: `https://morphic.sh/search?q=%s`
+   - **Search engine**: DLM GPT
+   - **Shortcut**: dlmgpt
+   - **URL with %s in place of query**: `https://dlmworld.com/search?q=%s`
 6. Click "Add" to save the new search engine.
-7. Find "Morphic" in the list of site search, click on the three dots next to it, and select "Make default".
+7. Find "DLM GPT" in the list of site search, click on the three dots next to it, and select "Make default".
 
-This will allow you to use Morphic as your default search engine in the browser.
+This will allow you to use DLM GPT as your default search engine in the browser.
 
 ## 💙 Sponsors
 
@@ -222,7 +216,7 @@ This project is proudly supported by:
 
 ## 👥 Contributing
 
-We welcome contributions to Morphic! Whether it's bug reports, feature requests, or pull requests, all contributions are appreciated.
+We welcome contributions to DLM GPT! Whether it's bug reports, feature requests, or pull requests, all contributions are appreciated.
 
 Please see our [Contributing Guide](CONTRIBUTING.md) for details on:
 
