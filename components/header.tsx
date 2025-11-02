@@ -1,16 +1,16 @@
 'use client'
 
-// import Link from 'next/link' // No longer needed directly here for Sign In button
 import React from 'react'
+
+import Link from 'next/link'
 
 import { User } from '@supabase/supabase-js'
 
+import { useSidebar } from '@/components/ui/sidebar'
 import { cn } from '@/lib/utils'
 
-import { useSidebar } from '@/components/ui/sidebar'
-
-// import { Button } from './ui/button' // No longer needed directly here for Sign In button
-import GuestMenu from './guest-menu' // Import the new GuestMenu component
+import GuestMenu from './guest-menu'
+import { Button } from './ui/button'
 import UserMenu from './user-menu'
 
 interface HeaderProps {
@@ -27,8 +27,13 @@ export const Header: React.FC<HeaderProps> = ({ user }) => {
         'w-full'
       )}
     >
-      {/* This div can be used for a logo or title on the left if needed */}
-      <div></div>
+      <div>
+        <Button asChild size="sm" variant="secondary">
+          <Link href="https://dlmworld.com" target="_blank" rel="noopener noreferrer">
+            Back to DLM
+          </Link>
+        </Button>
+      </div>
 
       <div className="flex items-center gap-2">
         {user ? <UserMenu user={user} /> : <GuestMenu />}
