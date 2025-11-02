@@ -1,12 +1,13 @@
 'use client'
 
-import Link from 'next/link'
 import React from 'react'
+
+import Link from 'next/link'
 
 import { User } from '@supabase/supabase-js'
 
-import { cn } from '@/lib/utils'
 import { useSidebar } from '@/components/ui/sidebar'
+import { cn } from '@/lib/utils'
 
 import GuestMenu from './guest-menu'
 import { Button } from './ui/button'
