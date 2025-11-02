@@ -1,8 +1,7 @@
 'use client'
 
-import Link from 'next/link'
-
 import { Globe } from 'lucide-react'
+import Link from 'next/link'
 import { SiGithub } from 'react-icons/si'
 
 import { DropdownMenuItem } from '@/components/ui/dropdown-menu'

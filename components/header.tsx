@@ -1,7 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import React from 'react'
+
+import Link from 'next/link'
 
 import { User } from '@supabase/supabase-js'
 
