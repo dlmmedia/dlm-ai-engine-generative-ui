@@ -1,17 +1,14 @@
 'use client'
 
+import { User } from '@supabase/supabase-js'
+import Link from 'next/link'
 import React from 'react'
 
-import Link from 'next/link'
-
-import { User } from '@supabase/supabase-js'
-
+import { useSidebar } from '@/components/ui/sidebar'
 import { cn } from '@/lib/utils'
 
-import { useSidebar } from '@/components/ui/sidebar'
-
-import { Button } from './ui/button'
 import GuestMenu from './guest-menu'
+import { Button } from './ui/button'
 import UserMenu from './user-menu'
 
 interface HeaderProps {
